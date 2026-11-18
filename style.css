@@ -1,0 +1,171 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #263445;
+    padding: 40px 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* JUDUL */
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #1e3a5f;
+}
+
+/* TOMBOL TAMBAH */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.main > a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main > a:hover {
+    background: #1d4ed8;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #1e3a5f;
+    color: white;
+    padding: 14px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+/* GAMBAR BARANG */
+td img {
+    width: 75px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+}
+
+/* TOMBOL UBAH DAN HAPUS */
+td a {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+td a[href*="ubah"] {
+    background: #2563eb;
+    color: white;
+}
+
+td a[href*="hapus"] {
+    background: #dc2626;
+    color: white;
+}
+
+td a:hover {
+    opacity: 0.8;
+}
+
+/* FORM */
+form {
+    max-width: 600px;
+}
+
+.input {
+    margin-bottom: 18px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.input input:focus,
+.input select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* TOMBOL SIMPAN */
+.submit input {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit input:hover {
+    background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    body {
+        padding: 15px 8px;
+    }
+
+    .container {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 750px;
+    }
+}
